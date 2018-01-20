@@ -1,0 +1,68 @@
+<!DOCTYPE html>  
+<!-- not a normal html tag; defines the subset of sgml that you're using - in this case html 5 -->
+<html>
+	<head>  
+		<!-- head consists of things that will not appear on the webpage - meta-info; javascript or css files that 		 are used in the page but don't need to be visible; other stuff you don't want shown to the user -->
+		<meta charset="UTF-8">
+		<!-- meta is used to define meta info -->
+		<meta name="viewport" content="width=device.width, initial-scale=1">
+		<!-- This specific tag allows the browser to adjust screen size for desktop and mobile viewing. 
+		It becomes extremely important when we start using bootstrap because without it it won't scale correctly -->
+		<metaname="keywords" content="awesome pages">
+		<meta name="author" content="Jo Kirungi"> 
+
+		<title>My Website</title>
+	</head>
+	<body bgcolor="#69F">
+		<!-- things that appear in the square on the webpage and actually get rendered  -->
+		<form>
+			<!-- </div>username<input type="text"><label> -->
+			<!-- text is technically semantically incorrect because if you want the user to enter an email you 
+			should specify email so the browser can check / verify that its an email - usually by making sure there's
+			an @ sign -->
+			<label>username<input type="email" placeholder="test@testing.com"></label>
+			<br>
+			<!-- input type is self closing so you don't have to add </text> -->
+			<label>password<input type="password" placeholder="********"></label>
+			<br>
+			<button>Submit</button>
+		</form>
+		<h2>Welcome to my totally awesome website of cute pandas</h2>
+		<a>Link to github</a>
+		<br>
+		<!-- The a tag stands for address -->
+		<!-- This link to github actually doesn't do anything so we have to provide it with an attribute -->
+		<!-- Create an att. by typing <attribute name ="" -->
+		<a href="helloworld.html">Link to my Hello World webpage</a>
+		<!-- This attribute now defines where that link is going to go so someone can click on it -->
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		<!-- You can use style sheet (CSS) tags to modify the format. CSS tags can be used as an inline tag and also as a block tag like so: -->
+		<p style="background-color: red; border: solid black 30px;">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit amet consectetur adipisci[ng] velit, sed quia non-numquam [do] eius modi tempora inci[di]dunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?</p>
+
+		<!-- You can use "rgb values" to specify things like color. So instead of typing "Red" after bgcolor, which will give you a generic red, you can use the pound # sign followed by a 6-digit number which represents Red(12)-Green(34)-Blue(56) so you can specify strong red, medium green, weak blue for example - like mixing paints [although it works more like light than paint - when you add all paints together it gets dark, but if you add light you get white light - so if you want it to get lighter you use higher numbers, and lower numbers for darker colors e.g. #FF6600 where FF stands for Full. You can do 6-digit or 3-digit hexa-decimals depending on how specific you want to get with your color-->
+
+
+		<!-- There are a million different kinds of attributes; you can use javascript and css to make your own
+		attributes. The 2 most common ones are the id tag and the class tag. Any tag can have the id or class attribute but the id att. can only have 1 instance within a tag body; its how we assign a special identifier** -->
+		<h2 id="ourTitle" class="important">Here is a happy panda</h2>
+		<!-- Another common att. is the image tag. Simply find an image online, right click, select "Copy Image Address" and enter that url after the command shown below -->
+		<!-- <img src=http://pressa.tv/uploads/posts/2016-08/1472522256_64.jpg> -->
+		<!-- <img src=happypanda.jpg> -->
+		<img width="500px" src="images/happypanda.jpg">
+	</body>
+
+
+</html>  
+<!-- defines the borders of the html doc; everything between these 2 html tags will be in html -->
+
+<!-- <!DOCTYPE html>   //whenever you open a new file, if you just start typing <html> and hit tab once the options pop up, it will automatically create this format for you
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+</html> -->
+
